@@ -161,13 +161,6 @@ export default function Navbar() {
 
                         <li className="md:inline hidden ps-1 mb-0 ">
                             <LoginButton href="/signup" isSignUp />
-                            {/* <Link */}
-                            {/*     href="/signup" */}
-                            {/*     target="_blank" */}
-                            {/*     className="py-[6px] px-4 inline-block items-center justify-center tracking-wider align-middle duration-500 text-sm text-center rounded bg-amber-400 hover:bg-amber-500 border border-amber-400 hover:border-amber-500 text-white font-semibold" */}
-                            {/* > */}
-                            {/*     Signup */}
-                            {/* </Link> */}
                         </li>
                     </ul>
                     <div id="navigation" className={`${toggleMenu ? "block" : ""}`}>
