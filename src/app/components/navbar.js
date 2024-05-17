@@ -121,48 +121,15 @@ export default function Navbar() {
                 id="topnav"
                 className={`${scroll ? "nav-sticky" : ""} defaultscroll is-sticky`}
             >
-                <div className="container">
+                <div className="container flex flex-row items-center justify-between">
                     <Link className="logo" href="/">
                         <Image
-                            src="/images/logo-dark.png"
-                            width={128}
-                            height={24}
-                            className="h-6 inline-block dark:hidden"
-                            alt=""
-                        />
-                        <Image
-                            src="/images/logo-light.png"
-                            width={128}
-                            height={24}
-                            className="h-6 hidden dark:inline-block"
+                            src="/images/mailfile_logo.png"
+                            width={48}
+                            height={48}
                             alt=""
                         />
                     </Link>
-
-                    <div className="menu-extras">
-                        <div className="menu-item">
-                            <Link
-                                href="#"
-                                className={`${toggleMenu ? "open" : ""} navbar-toggle`}
-                                onClick={() => setToggleMenu(!toggleMenu)}
-                            >
-                                <div className="lines">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <ul className="buy-button list-none mb-0">
-                        <li className="inline mb-0">
-                            <LoginButton href="/login" />
-                        </li>
-
-                        <li className="md:inline hidden ps-1 mb-0 ">
-                            <LoginButton href="/signup" isSignUp />
-                        </li>
-                    </ul>
                     <div id="navigation" className={`${toggleMenu ? "block" : ""}`}>
                         <ul className="navigation-menu">
                             <li className="has-submenu parent-menu-item">
@@ -297,6 +264,32 @@ export default function Navbar() {
                                 </Link>
                             </li>
                         </ul>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <ul className="buy-button list-none mb-0">
+                            <li className="inline mb-0">
+                                <LoginButton href="/login" />
+                            </li>
+
+                            <li className="md:inline hidden ps-1 mb-0 ">
+                                <LoginButton href="/signup" isSignUp />
+                            </li>
+                        </ul>
+                        <div className="menu-extras">
+                            <div className="menu-item">
+                                <Link
+                                    href="#"
+                                    className={`${toggleMenu ? "open" : ""} navbar-toggle`}
+                                    onClick={() => setToggleMenu(!toggleMenu)}
+                                >
+                                    <div className="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
