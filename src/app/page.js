@@ -28,37 +28,35 @@ export default function Index() {
     return (
         <>
             <Navbar />
-            <section className="relative overflow-hidden pt-48 after:content-[''] after:absolute after:inset-0 after:mx-auto after:w-[56rem] after:h-[56rem] after:bg-gradient-to-tl after:to-amber-400/30  after:from-fuchsia-600/30 dark:after:to-amber-400/50 dark:after:from-fuchsia-600/50 after:blur-[200px] after:rounded-full after:-z-1">
+            <section className="relative overflow-hidden pt-48 after:content-[''] after:absolute after:inset-0 after:mx-auto after:w-[56rem] after:h-[56rem] after:bg-gradient-to-tl after:to-aqua-400  after:from-aqua-600/30 dark:after:to-aqua-800 dark:after:from-aqua-500 after:blur-[150px] after:rounded-full after:-z-1">
                 <div className="container relative z-2">
                     <div className="grid grid-cols-1 text-center">
                         <div className="">
                             <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-6xl mb-5">
-                                The AI Content <br /> Plaform for
+                                The
                                 <TypeAnimation
                                     sequence={[
-                                        // Same substring at the start will only be typed out once, initially
-                                        "Videos",
-                                        1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                        "Modern Teams",
+                                        "Ultimate Solution",
                                         1000,
-                                        "Social Media",
+                                        "Ultimate Solution",
                                         1000,
                                     ]}
                                     wrapper="span"
                                     speed={10}
-                                    className="typewrite bg-gradient-to-br from-amber-400 to-fuchsia-600 text-transparent bg-clip-text ms-4"
+                                    className="typewrite bg-gradient-to-br from-amber-400 to-fuchsia-600 text-transparent bg-clip-text ms-4 [filter:drop-shadow(1px_4px_3px_rgba(0,0,0,0.25))]"
                                     repeat={Infinity}
-                                />
+                                />{" "}
+                                <br />
+                                for Court Email Chaos
                             </h4>
                             <p className="text-slate-400 dark:text-white/60 text-lg max-w-xl mx-auto">
-                                Artificial intelligence makes it fast easy to create content for
-                                your blog, social media, website, and more!
+                                Elevate Your Courtroom Efficiency with Our MailFile App
                             </p>
 
                             <div className="mt-6">
                                 <Link
                                     href=""
-                                    className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-amber-400 hover:bg-amber-500 border-amber-400 hover:border-amber-500 text-white rounded-md"
+                                    className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-aqua-500 hover:bg-aqua-500/50 border-aqua-400 hover:border-aqua-500/20 text-white rounded-md hover:cursor-pointer"
                                 >
                                     Try For Free
                                 </Link>
@@ -70,7 +68,7 @@ export default function Index() {
                         </div>
                         <div className="relative mt-8 z-3">
                             <Image
-                                src="/images/classic01.png"
+                                src="/images/hero_image.png"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -90,30 +88,30 @@ export default function Index() {
             </section>
 
             <section className="relative md:py-24 py-16">
-                <Features classlist="container relative" />
-                <AboutOne />
-                <AboutTwo />
-                <AmazingFeatures />
-                <AboutThree />
-
-                <div className="container relative md:mt-24 mt-16">
-                    <div className="grid grid-cols-1 pb-6 text-center">
-                        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
-                            The right plans, <br />{" "}
-                            <span className="bg-gradient-to-br from-amber-400 to-fuchsia-600 text-transparent bg-clip-text">
-                                for the right price
-                            </span>
-                        </h3>
-
-                        <p className="text-slate-400 max-w-xl mx-auto">
-                            Artificial intelligence makes it fast easy to create content for
-                            your blog, social media, website, and more!
-                        </p>
-                    </div>
-                    <Pricing />
-                </div>
-                <Faq />
-                <Blogs />
+                {/* <Features classlist="container relative" /> */}
+                {/* <AboutOne /> */}
+                {/* <AboutTwo /> */}
+                {/* <AmazingFeatures /> */}
+                {/* <AboutThree /> */}
+                {/**/}
+                {/* <div className="container relative md:mt-24 mt-16"> */}
+                {/*     <div className="grid grid-cols-1 pb-6 text-center"> */}
+                {/*         <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold"> */}
+                {/*             The right plans, <br />{" "} */}
+                {/*             <span className="bg-gradient-to-br from-amber-400 to-fuchsia-600 text-transparent bg-clip-text"> */}
+                {/*                 for the right price */}
+                {/*             </span> */}
+                {/*         </h3> */}
+                {/**/}
+                {/*         <p className="text-slate-400 max-w-xl mx-auto"> */}
+                {/*             Artificial intelligence makes it fast easy to create content for */}
+                {/*             your blog, social media, website, and more! */}
+                {/*         </p> */}
+                {/*     </div> */}
+                {/*     <Pricing /> */}
+                {/* </div> */}
+                {/* <Faq /> */}
+                {/* <Blogs /> */}
             </section>
             <Footer />
             <Switcher />
